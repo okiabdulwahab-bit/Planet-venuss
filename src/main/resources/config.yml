@@ -1,0 +1,29 @@
+# Venus plugin config
+
+item:
+  # The item you must carry in your inventory for the passive + ability.
+  # Get it with /venus give
+  material: GLOWSTONE_DUST
+  name: "&6&lVenus"
+  lore:
+    - "&7Passive: &c+3 hearts &7while in your inventory"
+    - "&7Ability: &e/venus1 &7- unbreakable shield"
+
+passive:
+  # Extra hearts (1 heart = 2 health points)
+  extra-hearts: 3
+
+ability:
+  # How long the shield can't be broken or disabled (seconds)
+  duration: 5
+  # Cooldown in seconds, starts the moment you use /venus1
+  cooldown: 25
+
+messages:
+  need-item: "&cYou need the Venus item in your inventory to do that."
+  on-cooldown: "&cVenus is on cooldown for &e%seconds%s&c."
+  activated: "&6Venus shield active! &eYour shield can't be broken for %seconds%s."
+  ended: "&7Your Venus shield has worn off."
+  actionbar: "&6Venus shield: &e%seconds%s"
+  players-only: "&cOnly players can use this."
+  no-permission: "&cYou don't have permission."

@@ -1,0 +1,21 @@
+name: Venus
+version: 1.0.0
+main: com.venus.VenusPlugin
+api-version: '1.21'
+description: Venus planet - passive extra hearts and an unbreakable shield ability
+commands:
+  venus1:
+    description: Activate the Venus unbreakable shield ability
+    usage: /venus1
+    permission: venus.use
+  venus:
+    description: Venus admin command
+    usage: /venus <give|reload> [player]
+    permission: venus.admin
+permissions:
+  venus.use:
+    description: Allows using /venus1
+    default: true
+  venus.admin:
+    description: Allows /venus give and /venus reload
+    default: op
